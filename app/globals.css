@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: 247 247 244;
+  --surface: 255 255 255;
+  --surface-alt: 241 241 236;
+  --border: 226 226 220;
+  --border-soft: 236 236 230;
+  --text: 18 23 43;
+  --muted: 91 100 114;
+  --faint: 138 147 163;
+  --accent: 14 157 110;
+  --accent-soft: 228 245 238;
+  --accent-2: 54 82 224;
+  --accent-2-soft: 233 236 252;
+  --danger: 198 67 63;
+  --danger-soft: 251 234 233;
+  --warning: 161 98 7;
+  --warning-soft: 251 241 222;
+  --on-accent: 255 255 255;
+}
+
+.dark {
+  --bg: 11 15 26;
+  --surface: 18 24 38;
+  --surface-alt: 23 31 44;
+  --border: 35 44 63;
+  --border-soft: 27 35 51;
+  --text: 236 238 243;
+  --muted: 154 163 181;
+  --faint: 92 101 119;
+  --accent: 34 197 141;
+  --accent-soft: 21 50 41;
+  --accent-2: 93 123 255;
+  --accent-2-soft: 24 34 64;
+  --danger: 255 107 107;
+  --danger-soft: 42 26 29;
+  --warning: 240 169 59;
+  --warning-soft: 42 33 20;
+  --on-accent: 8 19 14;
+}
+
+* {
+  border-color: rgb(var(--border));
+}
+
+body {
+  background: rgb(var(--bg));
+  color: rgb(var(--text));
+}
+
+::selection {
+  background: rgb(var(--accent) / 0.25);
+}
+
+table {
+  border-collapse: collapse;
+}
